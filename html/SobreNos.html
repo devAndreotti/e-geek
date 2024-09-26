@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="E-Geek, Loja geek, Star Wars, Sobre nós">
+    <meta name="author" content="Ricardo Andreotti Gonçalves">
+    <link rel="stylesheet" href="../css/LojaGeek.css">
+    <link rel="stylesheet" href="../css/SobreNos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>E-Geek: Sobre Nós</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../LojaGeek.html">
+                <h1 id="Primeiro-h1">E-Geek</h1>
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../LojaGeek.html">Início</a></li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Canecas</a></li>
+                <li><a href="#">Pelúcias</a></li>
+                <li><a href="#">Calças</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Procure na galáxia...">
+            <button type="submit">Buscar</button>
+        </div>
+
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Sobre Nós</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="../img/Equipe.png" alt="Equipe E-Geek Star Wars">
+            </div>
+            <div class="about-text">
+                <h3>Bem-vindo à E-Geek: O Império da Galáxia Star Wars</h3>
+                <p>Fundada em 2022, a E-Geek é o seu destino final para todos os produtos Star Wars na galáxia! Nossa missão é trazer o universo de uma galáxia muito, muito distante diretamente para você.</p>
+                
+                <h3>Nossa Paixão pela Força</h3>
+                <p>Na E-Geek, somos apaixonados por tudo relacionado a Star Wars. Nossa equipe é composta por entusiastas que vivem e respiram a saga, desde os filmes clássicos até as séries mais recentes como The Mandalorian e Obi-Wan Kenobi.</p>
+                
+                <h3>Nossos Produtos da Galáxia</h3>
+                <p>Oferecemos uma vasta gama de produtos Star Wars, incluindo:</p>
+                <ul>
+                    <li>Sabres de luz colecionáveis</li>
+                    <li>Camisetas temáticas dos filmes e séries</li>
+                    <li>Capacetes de Stormtroopers e personagens icônicos</li>
+                    <li>Miniaturas de naves espaciais</li>
+                    <li>Livros e quadrinhos do universo expandido</li>
+                </ul>
+                <p>Todos inspirados na saga épica que amamos. Nosso compromisso é fornecer produtos de alta qualidade que permitam que você expresse seu amor por Star Wars com estilo.</p>
+                
+                <h3>Nossa Filosofia Jedi</h3>
+                <p>Na E-Geek, acreditamos que o caminho Jedi (ou Sith, não julgamos) é para todos. Estamos aqui para celebrar sua paixão por Star Wars e ajudá-lo a encontrar os itens perfeitos para sua coleção, seja você um Padawan iniciante ou um Mestre Jedi experiente.</p>
+                
+                <h3>Junte-se à Nossa Aliança</h3>
+                <p>Embarque nesta jornada épica através do universo Star Wars conosco. Que a Força esteja com você!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>E-Geek</h2>
+                <p>Seu destino para produtos geek na galáxia</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                    <li><a href="TermosServico.html">Termos de Serviço</a></li>
+                    <li><a href="SobreNos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Fique por dentro</h3>
+                <p>Assine nossa newsletter para novidades e promoções</p>
+                <form>
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Geek. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

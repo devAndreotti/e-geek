@@ -1,0 +1,464 @@
+body {
+    background-image: url(../img/Geek01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    color: #FFE81F;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+a {
+    color: #FFE81F;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00FF00;
+}
+
+/* Estilos do Header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    flex: 1;
+}
+
+#Primeiro-h1 {
+    color: #FFE81F;
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 0 0 10px #FFE81F;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo:hover #Primeiro-h1 {
+    color: #fff59b;
+    text-shadow: 0 0 15px #FFE81F, 0 0 25px #FFE81F, 0 0 35px #FFE81F;
+}
+
+/* Estilos da Navbar */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    font-weight: bold;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #00FF00;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Estilos da barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFE81F;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #FFE81F;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #00FF00;
+}
+
+/* Estilos do ícone do menu mobile */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background-color: #FFE81F;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Estilos do Main (conteúdo principal) */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #FFE81F;
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #FFE81F;
+}
+
+/* Estilos dos produtos */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 232, 31, 0.3);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    color: #FFE81F;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    color: #00FF00;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #FFE81F;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #00FF00;
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #FFE81F;
+    padding: 40px 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo,
+.footer-links,
+.footer-newsletter,
+.footer-social {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #FFE81F;
+}
+
+.footer-logo p {
+    font-size: 0.9em;
+}
+
+.footer-links h3,
+.footer-newsletter h3,
+.footer-social h3 {
+    color: #00FF00;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.social-icon {
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.social-icon:hover {
+    color: #00FF00;
+}
+
+.footer-newsletter form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-newsletter input[type="email"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFE81F;
+}
+
+.footer-newsletter button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #00FF00;
+    color: black;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.footer-newsletter button:hover {
+    background-color: #FFE81F;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 232, 31, 0.3);
+}
+
+/* Responsividade */
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+
+    #Primeiro-h1 {
+        font-size: 2em;
+    }
+
+    .navbar a {
+        font-size: 1em;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        padding: 6px 12px;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .product-title {
+        font-size: 1.1em;
+    }
+
+    .product-description {
+        font-size: 0.85em;
+    }
+
+    .product-price {
+        font-size: 1em;
+    }
+
+    .add-to-cart {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .footer-logo h2 {
+        font-size: 1.8em;
+    }
+
+    .footer-links h3,
+    .footer-newsletter h3,
+    .footer-social h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        order: 3;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        order: 2;
+    }
+
+    .search-bar {
+        display: none;
+        width: 100%;
+        order: 4;
+    }
+
+    header.active {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header.active .navbar {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    header.active .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header.active .navbar li {
+        margin: 15px 0;
+    }
+
+    header.active .search-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        padding: 10px 0;
+    }
+
+    header.active .search-bar input,
+    header.active .search-bar button {
+        height: 36px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-logo,
+    .footer-links,
+    .footer-newsletter,
+    .footer-social {
+        flex-basis: 100%;
+    }
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

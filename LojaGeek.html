@@ -1,0 +1,149 @@
+<!DOCTYPE html> <!-- Define que é um documento HTML5 -->
+
+<html lang="pt-BR"> <!-- Raiz de uma página HTML -->
+
+
+<head> <!-- Informações meta sobre a página HTML -->
+
+    <meta charset="UTF-8"/> <!-- Representa qualquer caractere de qualquer idioma -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <!-- Compatibilidade da página -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Instruções sobre como controlar as dimensões e o dimensionamento da página --> 
+
+    <meta name="keywords" content="E-Geek, Loja geek, Star Wars"/> <!-- Descrição da página -->
+
+    <meta name="author" content="Ricardo Andreotti Gonçalves"/> <!-- Autor da página -->
+
+    <link rel="stylesheet" href="css/LojaGeek.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>E-Geek: O Império da Cultura Geek</title>
+
+</head> <!-- Fim das informações -->
+
+
+
+<body> <!-- Elemento que representa o conteúdo de um documento HTML -->
+
+
+    <header> <!-- Cabeçalho início -->
+        <div class="logo">
+            <a href="LojaGeek.html">
+                <h1 id="Primeiro-h1">E-Geek</h1> <!-- Tag de título -->
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Canecas</a></li>
+                <li><a href="#">Pelúcias</a></li>
+                <li><a href="#">Calças</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            
+            <input type="text" placeholder="Procure na galáxia..."> <!-- Aqui o imput é um campo de texto e abaixo um botão -->
+            
+            <button type="submit">Buscar</button> <!-- Formas de se colocar um botão / <button>BUSCAR</button> -->
+
+        </div>
+
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header> <!-- Cabeçalho fim -->
+
+
+        <br>  
+
+
+    <main> <!-- Ínicio da área com o conteúdo principal --> 
+
+        <h2 class="section-title">Produtos em Destaque</h2>
+        <div class="products-container">
+            <div class="product">
+                <div class="product-image">
+                    <img src="img/Camiseta01.PNG" alt="Camiseta Star Wars">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Camiseta de algodão Star Wars</h3>
+                    <p class="product-description">Camiseta confortável com estampa do universo Star Wars.</p>
+                    <p class="product-price">R$ 49,95</p>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="img/Camiseta02.PNG" alt="Camiseta Star Wars">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Camiseta de seda Star Wars</h3>
+                    <p class="product-description">Camiseta elegante de seda com design inspirado em Star Wars.</p>
+                    <p class="product-price">R$ 39,47</p>
+                    <button class="add-to-cart">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Adicione mais produtos aqui seguindo o mesmo padrão -->
+        </div>
+    </main> <!-- Fim da área com o conteúdo principal -->
+
+
+    <br><br><br><br><br><br><br>
+
+
+    <footer> <!-- Início do rodapé -->
+
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>E-Geek</h2>
+                <p>Seu destino para produtos geek na galáxia</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="html/PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                    <li><a href="html/TermosServico.html">Termos de Serviço</a></li>
+                    <li><a href="html/SobreNos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Fique por dentro</h3>
+                <p>Assine nossa newsletter para novidades e promoções</p>
+                <form>
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Geek. Todos os direitos reservados.</p>
+        </div>
+
+    </footer> <!-- Fim do rodapé -->
+
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('active');
+        });
+    </script>
+
+</body> <!-- Fim de um documento HTML -->
+
+</html>

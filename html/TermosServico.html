@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="E-Geek, Loja geek, Star Wars, Termos de Serviço">
+    <meta name="author" content="Ricardo Andreotti Gonçalves">
+    <link rel="stylesheet" href="../css/LojaGeek.css">
+    <link rel="stylesheet" href="../css/TermosServico.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <title>E-Geek: Termos de Serviço</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../LojaGeek.html">
+                <h1 id="Primeiro-h1">E-Geek</h1>
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../LojaGeek.html">Início</a></li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Canecas</a></li>
+                <li><a href="#">Pelúcias</a></li>
+                <li><a href="#">Calças</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Procure na galáxia...">
+            <button type="submit">Buscar</button>
+        </div>
+
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Termos de Serviço</h2>
+        <div class="terms-content">
+            <section>
+                <h3>1. Aceitação dos Termos</h3>
+                <p>Ao acessar e usar o site E-Geek, você concorda em cumprir e estar vinculado a estes Termos de Serviço. Se você não concordar com algum aspecto destes termos, não use nosso site.</p>
+            </section>
+
+            <section>
+                <h3>2. Uso do Site</h3>
+                <p>Você concorda em usar o site apenas para fins legais e de uma maneira que não infrinja os direitos de terceiros, nem restrinja ou iniba o uso e aproveitamento do site por qualquer terceiro.</p>
+            </section>
+
+            <section>
+                <h3>3. Contas de Usuário</h3>
+                <p>Ao criar uma conta em nosso site, você é responsável por manter a confidencialidade de sua conta e senha e por restringir o acesso ao seu computador. Você concorda em aceitar a responsabilidade por todas as atividades que ocorrem em sua conta ou senha.</p>
+            </section>
+
+            <section>
+                <h3>4. Produtos e Preços</h3>
+                <p>Nos esforçamos para garantir que todas as informações sobre produtos e preços em nosso site sejam precisas. No entanto, erros podem ocorrer. Se descobrirmos um erro no preço de um produto que você encomendou, informaremos você e daremos a opção de reconfirmar seu pedido ao preço correto ou cancelá-lo.</p>
+            </section>
+
+            <section>
+                <h3>5. Propriedade Intelectual</h3>
+                <p>Todo o conteúdo incluído no site, como texto, gráficos, logotipos, imagens, bem como a compilação destes, é propriedade da E-Geek ou de seus fornecedores e protegido por leis de direitos autorais.</p>
+            </section>
+
+            <section>
+                <h3>6. Limitação de Responsabilidade</h3>
+                <p>A E-Geek não será responsável por quaisquer danos diretos, indiretos, incidentais, consequenciais ou punitivos resultantes do uso ou incapacidade de usar nossos serviços.</p>
+            </section>
+
+            <section>
+                <h3>7. Alterações nos Termos</h3>
+                <p>Reservamo-nos o direito de fazer alterações nestes Termos de Serviço a qualquer momento. Recomendamos que você verifique esta página regularmente para se manter informado sobre quaisquer atualizações.</p>
+            </section>
+
+            <section>
+                <h3>8. Lei Aplicável</h3>
+                <p>Estes termos serão regidos e interpretados de acordo com as leis do Brasil, sem considerar seus conflitos de disposições legais.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>E-Geek</h2>
+                <p>Seu destino para produtos geek na galáxia</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                  <li><a href="PoliticaPrivacidade.html">Política de Privacidade</a></li>
+                  <li><a href="TermosServico.html">Termos de Serviço</a></li>
+                  <li><a href="SobreNos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Fique por dentro</h3>
+                <p>Assine nossa newsletter para novidades e promoções</p>
+                <form>
+                    <input type="email" placeholder="Seu e-mail">
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Geek. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
